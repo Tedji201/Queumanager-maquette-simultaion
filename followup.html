@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Tickets</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="global.css">
+
+</head>
+<body>
+  <!-- Contenu principal -->
+  <div id="mainContent">
+    <header>
+      <!-- Icône hamburger -->
+      <div id="menuIcon">
+        &#9776;
+      </div>
+
+      <!-- Barre de navigation latérale -->
+      <nav id="sidebar">
+        <ul>
+          <li><a href="index1.html">Accueil</a></li>
+          <li><a href="followup.html">Mes Tickets</a></li>
+          <li><a href="settings.html">Paramètres</a></li>
+          <li><a href="Position.html">Position</a></li>
+        </ul>
+      </nav>
+
+      <!-- Titre au centre -->
+      <h1>Mes Tickets</h1>
+
+      <!-- Barre de recherche -->
+      <div id="searchBar">
+        <input type="text" id="serviceSearch" placeholder="Rechercher un service..." />
+        <button id="searchButton">Rechercher</button>
+      </div>
+
+      <!-- Profil utilisateur et notifications -->
+      <div id="userProfile">
+        <div id="authDropdown">
+          <img src="icone/profile.png" alt="Profil utilisateur" id="profileIcon">
+          <span id="userName">Utilisateur</span>
+          <button id="authButton">˅</button>
+          <ul id="authOptions">
+            <li><a href="login.html">Se déconnecter</a></li>
+          </ul>
+        </div>
+        <div id="notification">
+          🔔<span id="notificationCount">3</span>
+        </div>
+      </div>
+
+        <nav class="tabs">
+          <button id="tab-en-cours" class="tab active">En cours</button>
+          <button id="tab-historique" class="tab">Historique</button>
+        </nav>
+      </header>
+    
+      <main>
+        <!-- Section des tickets en cours -->
+        <section id="en-cours" class="tab-content active">
+          <div class="ticket-card">
+            <h3>Service C</h3>
+            <p><strong>Rendez-vous :</strong> 23 décembre 2024</p>
+            <p><strong>Statut :</strong> Confirmé</p>
+            <button class="view-ticket">Voir Détails</button>
+          </div>
+        </section>
+    
+        <!-- Section historique des tickets -->
+        <section id="historique" class="tab-content">
+          <div class="ticket-grid">
+            <div class="ticket-card">
+              <h3>Service A</h3>
+              <p><strong>Rendez-vous :</strong> 16 décembre 2024</p>
+              <p><strong>Statut :</strong> Annulé</p>
+              <button class="view-ticket">Voir Détails</button>
+            </div>
+            <div class="ticket-card">
+              <h3>Service B</h3>
+              <p><strong>Rendez-vous :</strong> 23 décembre 2024</p>
+              <p><strong>Statut :</strong> Annulé</p>
+              <button class="view-ticket">Voir Détails</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    
+      <!-- Modal -->
+      <div id="ticket-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h3>Détails du Ticket</h3>
+          <p id="modal-details"></p>
+        </div>
+      </div>
+      <button id="supportBtn">💬 Support</button>
+      <script src="followup.js"></script>
+      <script src="global.js"></script>
+
+
+      
+      
+    </body>
+    </html>
+    

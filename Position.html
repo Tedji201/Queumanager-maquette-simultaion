@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position dans la file</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="global.css">
+
+</head>
+<body>
+<!-- Contenu principal -->
+<div id="mainContent">
+    <header>
+  <!-- Icône hamburger -->
+<div id="menuIcon">
+  &#9776;
+</div>
+<!-- Barre de navigation latérale -->
+<nav id="sidebar">
+  <ul>
+    <li><a href="index1.html">Accueil</a></li>
+    <li><a href="followup.html">Mes Tickets</a></li>
+    <li><a href="settings.html">Paramètres</a></li>
+    <li><a href="Position.html">Position</a></li>
+  </ul>
+</nav>
+
+      <!-- Titre au centre -->
+      <h1>Bienvenue sur QueueManager</h1>
+      <!-- Barre de recherche -->
+      <div id="searchBar">
+        <input type="text" id="serviceSearch" placeholder="Rechercher un service..." />
+        <button id="searchButton">Rechercher</button>
+      </div>
+      <!-- Icône de profil utilisateur -->
+      <div id="userProfile">
+        <div id="authDropdown">
+        <a href="profil.html"><img src="icone/profile.png.png" alt="Profil utilisateur" id="profileIcon">
+       </a>
+
+        <button id="authButton">
+          ˅
+        </button>
+        <ul id="authOptions">
+          <li><a href="index.html">S'inscrire</a></li>
+          <li><a href="index.html">Se connecter</a></li>
+        </ul>
+      </div>
+      </div>
+      <!-- Boutons S'inscrire/Se connecter -->
+      <div id="userProfile">
+        <div id="notification">
+          🔔<span id="notificationCount">3</span>
+        </div>
+      </div>
+    </header>
+
+    <div id="carousel">
+        <div class="slide active">🎉 Découvrez nos nouvelles fonctionnalités !</div>
+        <div class="slide">🚀 Gagnez du temps avec QueueManager !</div>
+        <div class="slide">📱 Téléchargez notre application mobile maintenant !</div>
+      </div>
+
+  
+      
+    <!-- Position actuelle -->
+<div class="position-section">
+    <h1>Votre position actuelle</h1>
+    <table class="position-table">
+      <tr>
+        <th>Position</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td id="current-position">5</td>
+        <td>Vous êtes actuellement en 5<sup>e</sup> position.</td>
+      </tr>
+    </table>
+  </div>
+  
+  <!-- Statistiques -->
+  <div class="statistics-section">
+    <h2>Statistiques du service</h2>
+    <table class="stats-table">
+      <tr>
+        <th>Catégorie</th>
+        <th>Valeur</th>
+      </tr>
+      <tr>
+        <td>Temps moyen d'attente</td>
+        <td id="average-time">10 minutes</td>
+      </tr>
+      <tr>
+        <td>Nombre total de clients</td>
+        <td id="total-clients">25</td>
+      </tr>
+      <tr>
+        <td>Clients servis aujourd'hui</td>
+        <td id="clients-served">20</td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  <button id="supportBtn">💬 Support</button>
+
+  <script src="position.js"></script> 
+  <script src="global.js"></script>
+
+  
+</body>
+</html>

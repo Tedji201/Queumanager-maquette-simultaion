@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription / Connexion</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="global.css">
+
+</head>
+<body class="body1">
+  <div class="main-container">
+    <!-- Texte d'accueil -->
+    <div class="welcome-text">
+      <h1>Bienvenue sur QueuManager</h1>
+      <p>Avec nous, attendre n'est plus qu'un jeu.</p>
+    </div>
+
+    <!-- Conteneur des formulaires -->
+    <div class="auth-container">
+      <!-- Interface d'inscription -->
+      <div class="form-container" id="signup-form">
+        <h2>Inscription</h2>
+        <form>
+          <input type="text" id="signup-username" placeholder="Nom d'utilisateur" required>
+          <input type="email" id="signup-email" placeholder="Email" required>
+          <input type="password" id="signup-password" placeholder="Mot de passe" required>
+          <button type="submit">S'inscrire</button>
+        </form>
+        <p>Déjà un compte ? <a href="index1.html" id="show-login">Connectez-vous ici</a></p>
+      </div>
+
+      <!-- Interface de connexion -->
+      <div class="form-container hidden" id="login-form">
+        <h2>Connexion</h2>
+        <form>
+          <input type="email" id="login-email" placeholder="Email" required>
+          <input type="password" id="login-password" placeholder="Mot de passe" required>
+          <button type="submit">Se connecter</button>
+        </form>
+        <p>Pas encore inscrit ? <a href="#" id="show-signup">Inscrivez-vous ici</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+  <script src="global.js"></script>
+
+  
+</body>
+</html>
